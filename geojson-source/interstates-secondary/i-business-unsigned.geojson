@@ -1,0 +1,1159 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2021-03-08T16:06:07Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/16497599",
+        "NHS": "yes",
+        "destination": "Lexington;Winston-Salem",
+        "destination:ref": "I 285 North;US 52 North",
+        "hgv": "designated",
+        "hgv:national_network": "yes",
+        "highway": "motorway",
+        "lanes": "2",
+        "maxspeed": "65 mph",
+        "note": "Business 85 no longer signed as of completion of March 2020 signage project; to be decommissioned entirely at an unknown later date",
+        "oneway": "yes",
+        "ref": "I 285;US 29;US 52;US 70",
+        "source:hgv:national_network": "Title 23: Highways Part 658 http://ecfr.gpoaccess.gov/cgi/t/text/text-idx?c=ecfr&rgn=div5&view=text&node=23:1.0.1.7.33&idno=23",
+        "surface": "asphalt",
+        "tiger:reviewed": "no",
+        "unsigned_ref": "I 85 Business"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -80.3314468,
+            35.7677441
+          ],
+          [
+            -80.3307176,
+            35.7681995
+          ],
+          [
+            -80.330257,
+            35.7684867
+          ],
+          [
+            -80.3295138,
+            35.768842
+          ],
+          [
+            -80.3289063,
+            35.7690517
+          ],
+          [
+            -80.3279788,
+            35.7692804
+          ],
+          [
+            -80.3274805,
+            35.7693907
+          ],
+          [
+            -80.3266681,
+            35.7696566
+          ],
+          [
+            -80.3260594,
+            35.769947
+          ],
+          [
+            -80.3255149,
+            35.77028
+          ],
+          [
+            -80.3250671,
+            35.7706338
+          ],
+          [
+            -80.3246904,
+            35.7709973
+          ],
+          [
+            -80.3243999,
+            35.7713313
+          ]
+        ]
+      },
+      "id": "way/16497599"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/16509371",
+        "NHS": "yes",
+        "hgv": "designated",
+        "hgv:national_network": "yes",
+        "highway": "motorway",
+        "lanes": "2",
+        "note": "Business 85 no longer signed as of completion of March 2020 signage project; to be decommissioned entirely at an unknown later date",
+        "oneway": "yes",
+        "ref": "I 285;US 29;US 52;US 70",
+        "source:hgv:national_network": "Title 23: Highways Part 658 http://ecfr.gpoaccess.gov/cgi/t/text/text-idx?c=ecfr&rgn=div5&view=text&node=23:1.0.1.7.33&idno=23",
+        "tiger:reviewed": "no",
+        "unsigned_ref": "I 85 Business"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -80.2930359,
+            35.8005858
+          ],
+          [
+            -80.2932904,
+            35.7997687
+          ],
+          [
+            -80.2936552,
+            35.7988376
+          ],
+          [
+            -80.2941058,
+            35.79795
+          ],
+          [
+            -80.294535,
+            35.7971494
+          ],
+          [
+            -80.2950929,
+            35.7962879
+          ],
+          [
+            -80.2953522,
+            35.7959613
+          ],
+          [
+            -80.295801,
+            35.795409
+          ],
+          [
+            -80.2963374,
+            35.7948086
+          ]
+        ]
+      },
+      "id": "way/16509371"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/40117691",
+        "NHS": "yes",
+        "hgv": "designated",
+        "hgv:national_network": "yes",
+        "highway": "motorway",
+        "lanes": "2",
+        "note": "Business 85 no longer signed as of completion of March 2020 signage project; to be decommissioned entirely at an unknown later date",
+        "oneway": "yes",
+        "ref": "I 285;US 29;US 52;US 70",
+        "source:hgv:national_network": "Title 23: Highways Part 658 http://ecfr.gpoaccess.gov/cgi/t/text/text-idx?c=ecfr&rgn=div5&view=text&node=23:1.0.1.7.33&idno=23",
+        "tiger:reviewed": "no",
+        "unsigned_ref": "I 85 Business"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -80.3238112,
+            35.7723571
+          ],
+          [
+            -80.3234355,
+            35.7732
+          ],
+          [
+            -80.3231925,
+            35.7736394
+          ],
+          [
+            -80.3228327,
+            35.7741022
+          ],
+          [
+            -80.3223744,
+            35.7745659
+          ],
+          [
+            -80.3218555,
+            35.7749789
+          ],
+          [
+            -80.3188036,
+            35.7772714
+          ],
+          [
+            -80.3157885,
+            35.7795081
+          ],
+          [
+            -80.3149198,
+            35.7801525
+          ],
+          [
+            -80.3135746,
+            35.7812015
+          ],
+          [
+            -80.3103386,
+            35.7835991
+          ],
+          [
+            -80.3073371,
+            35.7858557
+          ],
+          [
+            -80.30341,
+            35.7888474
+          ],
+          [
+            -80.3004358,
+            35.7910491
+          ],
+          [
+            -80.2977536,
+            35.7930507
+          ],
+          [
+            -80.2970026,
+            35.7936946
+          ],
+          [
+            -80.2962945,
+            35.7944082
+          ]
+        ]
+      },
+      "id": "way/40117691"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/40117692",
+        "NHS": "yes",
+        "bridge": "yes",
+        "hgv": "designated",
+        "hgv:national_network": "yes",
+        "highway": "motorway",
+        "lanes": "2",
+        "layer": "1",
+        "note": "Business 85 no longer signed as of completion of March 2020 signage project; to be decommissioned entirely at an unknown later date",
+        "oneway": "yes",
+        "ref": "I 285;US 29;US 52;US 70",
+        "source:hgv:national_network": "Title 23: Highways Part 658 http://ecfr.gpoaccess.gov/cgi/t/text/text-idx?c=ecfr&rgn=div5&view=text&node=23:1.0.1.7.33&idno=23",
+        "tiger:reviewed": "no",
+        "unsigned_ref": "I 85 Business"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -80.3243999,
+            35.7713313
+          ],
+          [
+            -80.3240743,
+            35.7718318
+          ],
+          [
+            -80.3238112,
+            35.7723571
+          ]
+        ]
+      },
+      "id": "way/40117692"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/40879390",
+        "highway": "primary",
+        "lanes": "5",
+        "maxspeed": "30 mph",
+        "name": "East Jefferson Avenue",
+        "oneway": "yes",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Wayne, MI",
+        "tiger:name_base": "Jefferson",
+        "tiger:name_direction_prefix": "E",
+        "tiger:name_type": "Ave",
+        "tiger:reviewed": "no",
+        "unsigned_ref": "I 375 Business Spur"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -83.0419301,
+            42.3295981
+          ],
+          [
+            -83.0417869,
+            42.3296823
+          ]
+        ]
+      },
+      "id": "way/40879390"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/49975542",
+        "NHS": "yes",
+        "hgv": "designated",
+        "hgv:national_network": "yes",
+        "highway": "motorway",
+        "lanes": "2",
+        "note": "Business 85 no longer signed as of completion of March 2020 signage project; to be decommissioned entirely at an unknown later date",
+        "oneway": "yes",
+        "ref": "I 285;US 29;US 52;US 70",
+        "source:hgv:national_network": "Title 23: Highways Part 658 http://ecfr.gpoaccess.gov/cgi/t/text/text-idx?c=ecfr&rgn=div5&view=text&node=23:1.0.1.7.33&idno=23",
+        "tiger:reviewed": "no",
+        "unsigned_ref": "I 85 Business"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -80.2965413,
+            35.7945823
+          ],
+          [
+            -80.2974532,
+            35.7936598
+          ],
+          [
+            -80.2982257,
+            35.7929984
+          ],
+          [
+            -80.3032284,
+            35.7891898
+          ]
+        ]
+      },
+      "id": "way/49975542"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/49975543",
+        "NHS": "yes",
+        "bridge": "yes",
+        "hgv": "designated",
+        "hgv:national_network": "yes",
+        "highway": "motorway",
+        "lanes": "2",
+        "note": "Business 85 no longer signed as of completion of March 2020 signage project; to be decommissioned entirely at an unknown later date",
+        "oneway": "yes",
+        "ref": "I 285;US 29;US 52;US 70",
+        "source:hgv:national_network": "Title 23: Highways Part 658 http://ecfr.gpoaccess.gov/cgi/t/text/text-idx?c=ecfr&rgn=div5&view=text&node=23:1.0.1.7.33&idno=23",
+        "tiger:reviewed": "no",
+        "unsigned_ref": "I 85 Business"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -80.2963374,
+            35.7948086
+          ],
+          [
+            -80.2965413,
+            35.7945823
+          ]
+        ]
+      },
+      "id": "way/49975543"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/49975544",
+        "NHS": "yes",
+        "destination:lanes": "||High Point",
+        "destination:ref:lanes": "||US 29 North;US 70 East",
+        "hgv": "designated",
+        "hgv:national_network": "yes",
+        "highway": "motorway",
+        "lanes": "3",
+        "note": "Business 85 no longer signed as of completion of March 2020 signage project; to be decommissioned entirely at an unknown later date",
+        "oneway": "yes",
+        "ref": "I 285;US 29;US 52;US 70",
+        "source:hgv:national_network": "Title 23: Highways Part 658 http://ecfr.gpoaccess.gov/cgi/t/text/text-idx?c=ecfr&rgn=div5&view=text&node=23:1.0.1.7.33&idno=23",
+        "tiger:reviewed": "no",
+        "unsigned_ref": "I 85 Business"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -80.2936445,
+            35.7980545
+          ],
+          [
+            -80.2931939,
+            35.7990291
+          ],
+          [
+            -80.2929364,
+            35.7997165
+          ],
+          [
+            -80.2921663,
+            35.8018957
+          ],
+          [
+            -80.2918635,
+            35.8026142
+          ],
+          [
+            -80.2914236,
+            35.8036148
+          ],
+          [
+            -80.2908787,
+            35.804797
+          ],
+          [
+            -80.290525,
+            35.8054492
+          ],
+          [
+            -80.2901772,
+            35.8060485
+          ],
+          [
+            -80.2893754,
+            35.8073721
+          ],
+          [
+            -80.2864115,
+            35.8120768
+          ]
+        ]
+      },
+      "id": "way/49975544"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/49975545",
+        "NHS": "yes",
+        "bridge": "yes",
+        "hgv": "designated",
+        "hgv:national_network": "yes",
+        "highway": "motorway",
+        "lanes": "2",
+        "note": "Business 85 no longer signed as of completion of March 2020 signage project; to be decommissioned entirely at an unknown later date",
+        "oneway": "yes",
+        "ref": "I 285;US 29;US 52;US 70",
+        "source:hgv:national_network": "Title 23: Highways Part 658 http://ecfr.gpoaccess.gov/cgi/t/text/text-idx?c=ecfr&rgn=div5&view=text&node=23:1.0.1.7.33&idno=23",
+        "tiger:reviewed": "no",
+        "unsigned_ref": "I 85 Business"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -80.2962945,
+            35.7944082
+          ],
+          [
+            -80.2960692,
+            35.7946258
+          ]
+        ]
+      },
+      "id": "way/49975545"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/68309429",
+        "alt_name": "Business Spur I-375",
+        "highway": "primary",
+        "lanes": "5",
+        "maxspeed": "30 mph",
+        "name": "East Jefferson Avenue",
+        "oneway": "yes",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Wayne, MI",
+        "tiger:name_base": "Jefferson",
+        "tiger:name_direction_prefix": "E",
+        "tiger:name_type": "Ave",
+        "tiger:reviewed": "no",
+        "unsigned_ref": "I 375 Business Spur"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -83.0400533,
+            42.3307723
+          ],
+          [
+            -83.0401884,
+            42.3307159
+          ],
+          [
+            -83.0409439,
+            42.3303848
+          ],
+          [
+            -83.0410255,
+            42.3303502
+          ]
+        ]
+      },
+      "id": "way/68309429"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/69706049",
+        "alt_name": "Business Spur I-375",
+        "highway": "primary",
+        "lanes": "4",
+        "maxspeed": "35 mph",
+        "name": "East Jefferson Avenue",
+        "oneway": "yes",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Wayne, MI",
+        "tiger:name_base": "Jefferson",
+        "tiger:name_direction_prefix": "E",
+        "tiger:name_type": "Ave",
+        "unsigned_ref": "I 375 Business Spur"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -83.0392668,
+            42.3307476
+          ],
+          [
+            -83.039231,
+            42.330764
+          ],
+          [
+            -83.0390996,
+            42.3308165
+          ]
+        ]
+      },
+      "id": "way/69706049"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/90546623",
+        "alt_name": "Business Spur I-375",
+        "highway": "primary",
+        "lanes": "5",
+        "maxspeed": "30 mph",
+        "name": "East Jefferson Avenue",
+        "oneway": "yes",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Wayne, MI",
+        "tiger:name_base": "Jefferson",
+        "tiger:name_direction_prefix": "E",
+        "tiger:name_type": "Ave",
+        "unsigned_ref": "I 375 Business Spur"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -83.0391949,
+            42.3311389
+          ],
+          [
+            -83.0394499,
+            42.3310261
+          ],
+          [
+            -83.0396307,
+            42.3309495
+          ],
+          [
+            -83.0397371,
+            42.3309051
+          ]
+        ]
+      },
+      "id": "way/90546623"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/120432123",
+        "alt_name": "Business Spur I-375",
+        "highway": "primary",
+        "lanes": "5",
+        "maxspeed": "35 mph",
+        "name": "East Jefferson Avenue",
+        "oneway": "yes",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Wayne, MI",
+        "tiger:name_base": "Jefferson",
+        "tiger:name_direction_prefix": "E",
+        "tiger:name_type": "Ave",
+        "tiger:reviewed": "no",
+        "unsigned_ref": "I 375 Business Spur"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -83.0417869,
+            42.3296823
+          ],
+          [
+            -83.0415808,
+            42.3297677
+          ],
+          [
+            -83.04146,
+            42.3298196
+          ]
+        ]
+      },
+      "id": "way/120432123"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/219716418",
+        "alt_name": "Business Spur I-375",
+        "highway": "primary",
+        "lanes": "4",
+        "maxspeed": "35 mph",
+        "name": "East Jefferson Avenue",
+        "oneway": "yes",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Wayne, MI",
+        "tiger:name_base": "Jefferson",
+        "tiger:name_direction_prefix": "E",
+        "tiger:name_type": "Ave",
+        "tiger:reviewed": "no",
+        "unsigned_ref": "I 375 Business Spur"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -83.039513,
+            42.3306411
+          ],
+          [
+            -83.0394038,
+            42.3306847
+          ],
+          [
+            -83.0392668,
+            42.3307476
+          ]
+        ]
+      },
+      "id": "way/219716418"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/421876182",
+        "alt_name": "Business Spur I-375",
+        "highway": "primary",
+        "lanes": "4",
+        "maxspeed": "35 mph",
+        "name": "East Jefferson Avenue",
+        "oneway": "yes",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Wayne, MI",
+        "tiger:name_base": "Jefferson",
+        "tiger:name_direction_prefix": "E",
+        "tiger:name_type": "Ave",
+        "tiger:reviewed": "no",
+        "turn:lanes": "left;through|through|through|through;right",
+        "unsigned_ref": "I 375 Business Spur"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -83.0403893,
+            42.3302859
+          ],
+          [
+            -83.0401275,
+            42.3303708
+          ],
+          [
+            -83.0398014,
+            42.3305171
+          ],
+          [
+            -83.0397582,
+            42.3305379
+          ],
+          [
+            -83.0396773,
+            42.330572
+          ]
+        ]
+      },
+      "id": "way/421876182"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/422215960",
+        "alt_name": "Business Spur I-375",
+        "highway": "primary",
+        "lanes": "5",
+        "maxspeed": "35 mph",
+        "name": "East Jefferson Avenue",
+        "oneway": "yes",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Wayne, MI",
+        "tiger:name_base": "Jefferson",
+        "tiger:name_direction_prefix": "E",
+        "tiger:name_type": "Ave",
+        "tiger:reviewed": "no",
+        "unsigned_ref": "I 375 Business Spur"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -83.0405294,
+            42.330223
+          ],
+          [
+            -83.0403893,
+            42.3302859
+          ]
+        ]
+      },
+      "id": "way/422215960"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/453843838",
+        "alt_name": "Business Spur I-375",
+        "highway": "primary",
+        "lanes": "5",
+        "maxspeed": "35 mph",
+        "name": "East Jefferson Avenue",
+        "oneway": "yes",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Wayne, MI",
+        "tiger:name_base": "Jefferson",
+        "tiger:name_direction_prefix": "E",
+        "tiger:name_type": "Ave",
+        "tiger:reviewed": "no",
+        "unsigned_ref": "I 375 Business Spur"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -83.04146,
+            42.3298196
+          ],
+          [
+            -83.0412058,
+            42.3299268
+          ],
+          [
+            -83.0407586,
+            42.3301216
+          ],
+          [
+            -83.0405294,
+            42.330223
+          ]
+        ]
+      },
+      "id": "way/453843838"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/584946494",
+        "NHS": "yes",
+        "hgv": "designated",
+        "hgv:national_network": "yes",
+        "highway": "motorway",
+        "lanes": "2",
+        "note": "Business 85 no longer signed as of completion of March 2020 signage project; to be decommissioned entirely at an unknown later date",
+        "oneway": "yes",
+        "ref": "I 285;US 29;US 52;US 70",
+        "source:hgv:national_network": "Title 23: Highways Part 658 http://ecfr.gpoaccess.gov/cgi/t/text/text-idx?c=ecfr&rgn=div5&view=text&node=23:1.0.1.7.33&idno=23",
+        "tiger:reviewed": "no",
+        "unsigned_ref": "I 85 Business"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -80.3032284,
+            35.7891898
+          ],
+          [
+            -80.3038554,
+            35.7887144
+          ],
+          [
+            -80.3074235,
+            35.7860128
+          ],
+          [
+            -80.3089653,
+            35.7848525
+          ],
+          [
+            -80.3127925,
+            35.7819945
+          ],
+          [
+            -80.3142602,
+            35.7808865
+          ],
+          [
+            -80.3157337,
+            35.7797501
+          ],
+          [
+            -80.3195864,
+            35.7769161
+          ],
+          [
+            -80.32256,
+            35.774662
+          ],
+          [
+            -80.3258755,
+            35.7721726
+          ],
+          [
+            -80.3277669,
+            35.7708749
+          ],
+          [
+            -80.3288646,
+            35.7700422
+          ]
+        ]
+      },
+      "id": "way/584946494"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/637351951",
+        "alt_name": "Business Spur I-375",
+        "highway": "primary",
+        "lanes": "5",
+        "maxspeed": "30 mph",
+        "name": "East Jefferson Avenue",
+        "oneway": "yes",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Wayne, MI",
+        "tiger:name_base": "Jefferson",
+        "tiger:name_direction_prefix": "E",
+        "tiger:name_type": "Ave",
+        "tiger:reviewed": "no",
+        "unsigned_ref": "I 375 Business Spur"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -83.0397371,
+            42.3309051
+          ],
+          [
+            -83.0398823,
+            42.3308439
+          ]
+        ]
+      },
+      "id": "way/637351951"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/637693248",
+        "alt_name": "Business Spur I-375",
+        "highway": "primary",
+        "lanes": "4",
+        "maxspeed": "35 mph",
+        "name": "East Jefferson Avenue",
+        "oneway": "yes",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Wayne, MI",
+        "tiger:name_base": "Jefferson",
+        "tiger:name_direction_prefix": "E",
+        "tiger:name_type": "Ave",
+        "tiger:reviewed": "no",
+        "turn:lanes": "left;through|through|through|through;right",
+        "unsigned_ref": "I 375 Business Spur"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -83.0396773,
+            42.330572
+          ],
+          [
+            -83.039513,
+            42.3306411
+          ]
+        ]
+      },
+      "id": "way/637693248"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/672409594",
+        "alt_name": "Business Spur I-375",
+        "highway": "primary",
+        "lanes": "5",
+        "maxspeed": "30 mph",
+        "name": "East Jefferson Avenue",
+        "oneway": "yes",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Wayne, MI",
+        "tiger:name_base": "Jefferson",
+        "tiger:name_direction_prefix": "E",
+        "tiger:name_type": "Ave",
+        "tiger:reviewed": "no",
+        "unsigned_ref": "I 375 Business Spur"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -83.0398823,
+            42.3308439
+          ],
+          [
+            -83.0399622,
+            42.3308103
+          ],
+          [
+            -83.0400533,
+            42.3307723
+          ]
+        ]
+      },
+      "id": "way/672409594"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/682189952",
+        "alt_name": "Business Spur I-375",
+        "highway": "primary",
+        "lanes": "4",
+        "maxspeed": "35 mph",
+        "name": "East Jefferson Avenue",
+        "oneway": "yes",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Wayne, MI",
+        "tiger:name_base": "Jefferson",
+        "tiger:name_direction_prefix": "E",
+        "tiger:name_type": "Ave",
+        "unsigned_ref": "I 375 Business Spur"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -83.0390996,
+            42.3308165
+          ],
+          [
+            -83.0389997,
+            42.3308564
+          ]
+        ]
+      },
+      "id": "way/682189952"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/742989462",
+        "alt_name": "Business Spur I-375",
+        "highway": "primary",
+        "lanes": "5",
+        "maxspeed": "30 mph",
+        "name": "East Jefferson Avenue",
+        "oneway": "yes",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Wayne, MI",
+        "tiger:name_base": "Jefferson",
+        "tiger:name_direction_prefix": "E",
+        "tiger:name_type": "Ave",
+        "tiger:reviewed": "no",
+        "unsigned_ref": "I 375 Business Spur"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -83.0410255,
+            42.3303502
+          ],
+          [
+            -83.0417006,
+            42.330062
+          ],
+          [
+            -83.0419894,
+            42.3299387
+          ]
+        ]
+      },
+      "id": "way/742989462"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/760073350",
+        "NHS": "yes",
+        "hgv": "designated",
+        "hgv:national_network": "yes",
+        "highway": "motorway",
+        "lanes": "2",
+        "note": "Business 85 no longer signed as of completion of March 2020 signage project; to be decommissioned entirely at an unknown later date",
+        "oneway": "yes",
+        "ref": "I 285;US 29;US 52;US 70",
+        "source:hgv:national_network": "Title 23: Highways Part 658 http://ecfr.gpoaccess.gov/cgi/t/text/text-idx?c=ecfr&rgn=div5&view=text&node=23:1.0.1.7.33&idno=23",
+        "tiger:reviewed": "no",
+        "unsigned_ref": "I 85 Business"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -80.2960692,
+            35.7946258
+          ],
+          [
+            -80.2955113,
+            35.7952263
+          ],
+          [
+            -80.2948998,
+            35.7960443
+          ],
+          [
+            -80.2940951,
+            35.7972452
+          ],
+          [
+            -80.2936445,
+            35.7980545
+          ]
+        ]
+      },
+      "id": "way/760073350"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/760073351",
+        "NHS": "yes",
+        "destination:lanes": "||Lexington;Downtown",
+        "hgv": "designated",
+        "hgv:national_network": "yes",
+        "highway": "motorway",
+        "lanes": "3",
+        "note": "Business 85 no longer signed as of completion of March 2020 signage project; to be decommissioned entirely at an unknown later date",
+        "oneway": "yes",
+        "ref": "I 285;US 29;US 52;US 70",
+        "source:hgv:national_network": "Title 23: Highways Part 658 http://ecfr.gpoaccess.gov/cgi/t/text/text-idx?c=ecfr&rgn=div5&view=text&node=23:1.0.1.7.33&idno=23",
+        "tiger:reviewed": "no",
+        "unsigned_ref": "I 85 Business"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -80.2899804,
+            35.807074
+          ],
+          [
+            -80.29034,
+            35.8064884
+          ],
+          [
+            -80.291091,
+            35.8051202
+          ],
+          [
+            -80.2916704,
+            35.8039281
+          ],
+          [
+            -80.2920995,
+            35.8030231
+          ],
+          [
+            -80.2925394,
+            35.801918
+          ],
+          [
+            -80.2930359,
+            35.8005858
+          ]
+        ]
+      },
+      "id": "way/760073351"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/760073352",
+        "NHS": "yes",
+        "hgv": "designated",
+        "hgv:national_network": "yes",
+        "highway": "motorway",
+        "lanes": "4",
+        "note": "Business 85 no longer signed as of completion of March 2020 signage project; to be decommissioned entirely at an unknown later date",
+        "oneway": "yes",
+        "ref": "I 285;US 29;US 52;US 70",
+        "source:hgv:national_network": "Title 23: Highways Part 658 http://ecfr.gpoaccess.gov/cgi/t/text/text-idx?c=ecfr&rgn=div5&view=text&node=23:1.0.1.7.33&idno=23",
+        "tiger:reviewed": "no",
+        "unsigned_ref": "I 85 Business"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -80.2875681,
+            35.8108939
+          ],
+          [
+            -80.2899804,
+            35.807074
+          ]
+        ]
+      },
+      "id": "way/760073352"
+    }
+  ]
+}

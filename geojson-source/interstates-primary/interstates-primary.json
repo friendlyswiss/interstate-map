@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "layers": {
+    "i-90s-major": {
+      "source": "mapbox://tileset-source/carledge/i-90s-major",
+      "minzoom": 0,
+      "maxzoom": 10
+    },
+    "i-80s-major": {
+      "source": "mapbox://tileset-source/carledge/i-80s-major",
+      "minzoom": 0,
+      "maxzoom": 10
+    },
+    "i-70s-major": {
+      "source": "mapbox://tileset-source/carledge/i-70s-major",
+      "minzoom": 0,
+      "maxzoom": 10
+    },
+    "i-60s-major": {
+      "source": "mapbox://tileset-source/carledge/i-60s-major",
+      "minzoom": 0,
+      "maxzoom": 10
+    },
+    "i-50s-major": {
+      "source": "mapbox://tileset-source/carledge/i-50s-major",
+      "minzoom": 0,
+      "maxzoom": 10
+    },
+    "i-40s-major": {
+      "source": "mapbox://tileset-source/carledge/i-40s-major",
+      "minzoom": 0,
+      "maxzoom": 10
+    },
+    "i-30s-major": {
+      "source": "mapbox://tileset-source/carledge/i-30s-major",
+      "minzoom": 0,
+      "maxzoom": 10
+    },
+    "i-20s-major": {
+      "source": "mapbox://tileset-source/carledge/i-20s-major",
+      "minzoom": 0,
+      "maxzoom": 10
+    },
+    "i-10s-major": {
+      "source": "mapbox://tileset-source/carledge/i-10s-major",
+      "minzoom": 0,
+      "maxzoom": 10
+    },
+    "i-00s-major": {
+      "source": "mapbox://tileset-source/carledge/i-00s-major",
+      "minzoom": 0,
+      "maxzoom": 10
+    },
+    "i-90s-primary": {
+      "source": "mapbox://tileset-source/carledge/i-90s-primary",
+      "minzoom": 0,
+      "maxzoom": 10
+    },
+    "i-80s-primary": {
+      "source": "mapbox://tileset-source/carledge/i-80s-primary",
+      "minzoom": 0,
+      "maxzoom": 10
+    },
+    "i-70s-primary": {
+      "source": "mapbox://tileset-source/carledge/i-70s-primary",
+      "minzoom": 0,
+      "maxzoom": 10
+    },
+    "i-60s-primary": {
+      "source": "mapbox://tileset-source/carledge/i-60s-primary",
+      "minzoom": 0,
+      "maxzoom": 10
+    },
+    "i-50s-primary": {
+      "source": "mapbox://tileset-source/carledge/i-50s-primary",
+      "minzoom": 0,
+      "maxzoom": 10
+    },
+    "i-40s-primary": {
+      "source": "mapbox://tileset-source/carledge/i-40s-primary",
+      "minzoom": 0,
+      "maxzoom": 10
+    },
+    "i-30s-primary": {
+      "source": "mapbox://tileset-source/carledge/i-30s-primary",
+      "minzoom": 0,
+      "maxzoom": 10
+    },
+    "i-20s-primary": {
+      "source": "mapbox://tileset-source/carledge/i-20s-primary",
+      "minzoom": 0,
+      "maxzoom": 10
+    },
+    "i-10s-primary": {
+      "source": "mapbox://tileset-source/carledge/i-10s-primary",
+      "minzoom": 0,
+      "maxzoom": 10
+    },
+    "i-00s-primary": {
+      "source": "mapbox://tileset-source/carledge/i-00s-primary",
+      "minzoom": 0,
+      "maxzoom": 10
+    }
+  }
+}

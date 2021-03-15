@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "layers": {
+    "triplex-interstates": {
+      "source": "mapbox://tileset-source/carledge/i-triplex",
+      "minzoom": 0,
+      "maxzoom": 10
+    },
+    "duplex-interstates": {
+      "source": "mapbox://tileset-source/carledge/i-duplex",
+      "minzoom": 0,
+      "maxzoom": 10
+    },
+    "unsigned-interstates": {
+      "source": "mapbox://tileset-source/carledge/i-unsigned",
+      "minzoom": 0,
+      "maxzoom": 10
+    },
+    "future-interstates": {
+      "source": "mapbox://tileset-source/carledge/i-future",
+      "minzoom": 0,
+      "maxzoom": 10
+    },
+    "business-interstates": {
+      "source": "mapbox://tileset-source/carledge/i-business",
+      "minzoom": 0,
+      "maxzoom": 10
+    },
+    "unsigned-business-interstates": {
+      "source": "mapbox://tileset-source/carledge/i-business-unsigned",
+      "minzoom": 0,
+      "maxzoom": 10
+    },
+    "auxiliary-interstates": {
+      "source": "mapbox://tileset-source/carledge/i-auxiliary",
+      "minzoom": 0,
+      "maxzoom": 10
+    }
+  }
+}
