@@ -1269,7 +1269,7 @@ document.getElementById("deselect-numbers").addEventListener("click", function()
 const zoomAreas = [
   {'target': 'i2', 'coordinates': [[-98.58, 26.04], [-97.62, 26.36]], 'type': ['primary-layers'], 'tensDigit': ['routes-00'], 'onesDigit': ['even-routes']},
   {'target': 'i4', 'coordinates': [[-82.8, 27.82], [-80.88, 29.41]], 'type': ['primary-layers'], 'tensDigit': ['routes-00'], 'onesDigit': ['even-routes']},
-  {'target': 'i10', 'coordinates': [[-122, 26], [-78, 36]], 'type': ['major-layers'], 'tensDigit': ['routes-10'], 'onesDigit': ['even']},
+  {'target': 'i10', 'coordinates': [[-122, 26], [-78, 36]], 'type': ['major-layers'], 'tensDigit': ['routes-10'], 'onesDigit': ['even-routes']},
   {'target': 'i11', 'coordinates': [[-115.14, 35.88], [-114.65, 36.12]], 'type': ['major-layers'], 'tensDigit': ['routes-10'], 'onesDigit': ['even-routes']},
   {'target': 'i12', 'coordinates': [[-91.6, 30.15], [-89.46, 30.62]], 'type': ['primary-layers'], 'tensDigit': ['routes-10'], 'onesDigit': ['even-routes']},
   {'target': 'i14', 'coordinates': [[-98.04, 30.99], [-97.32, 31.19]], 'type': ['primary-layers'], 'tensDigit': ['routes-10'], 'onesDigit': ['even-routes']},
