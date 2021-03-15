@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The US Interstate Highway Numbering System</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="This interactive map demonstrates the unseen logic of the numbering system that underlies the United States' network of high-speed Interstate highways.">
+  <meta name="author" content="Curt Arledge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.js"></script>
+  <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
+  <script src="https://joanclaret.github.io/slide-and-swipe-menu/assets/js/jquery.touchSwipe.js"></script>
+  <script src="https://cdn.rawgit.com/bgrins/TinyColor/master/tinycolor.js"></script>
+</head>
+<body>
+<div class="page-wrapper chiller-theme toggled">
+  <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar" class="sidebar-wrapper">
+    <div class="sidebar-content">
+      <div class="sidebar-brand">
+        <img src="https://github.com/friendlyswiss/geo-hosting/raw/main/2560px-I-80.svg.png" alt="Interstate Route 80 Shield"/>
+        <a href="#">The US Interstate Highway Numbering System</a>
+        <div id="close-sidebar">
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+      <div class="sidebar-menu">
+        <ul>
+          <li class="sidebar-dropdown">
+            <a href="#">
+              <i class="fa fa-map"></i>
+              <span>About This Map</span>
+            </a>
+            <div class="sidebar-submenu">
+              <p>The purpose of this map is to demonstrate the unseen logic of the numbering system that underlies the United States' network of high-speed Interstate highways.</p>
+              <p>This map shows the Interstate highways in the contiguous US, color-coded by route number and type. (Alaska, Hawaii, and Puerto Rico also have Interstate highways, but use separate numbering systems.)</p>
+              <p>This map uses publicly available data from <a href="https://www.openstreetmap.org/">OpenStreetMap</a> displayed using <a href="https://docs.mapbox.com/mapbox-gl-js/api/">Mapbox GL JS</a>.</p>
+              <p>Created by <a href="https://curtarledge.com/">Curt Arledge</a></p>
+              <p>Additional sources: <a href="https://en.wikipedia.org/wiki/Interstate_Highway_System">Wikipedia.com</a>, <a href="https://highways.dot.gov">highways.dot.gov</a>, <a href="https://www.interstate-guide.com/">Interstate-Guide.com</a></p>
+            </div>
+          </li>
+          <li class="header-menu">
+            <span>Overview</span>
+          </li>        
+          <li class="sidebar-dropdown">
+            <a href="#">
+              <i class="fa fa-road"></i>
+              <span>Origins & Funding</span>
+            </a>
+            <div class="sidebar-submenu">
+              <p>The US Interstate Highway System, known officially as the <b>Dwight D. Eisenhower National System of Interstate and Defense Highways</b>, is a network of high-speed highways in the United States of America. The system was first authorized by the Federal-Aid Highway Act of 1956 and supported by President Eisenhower, for whom it is named. The Interstate route marker is a blue, red, and white shield with the word “Interstate” at the top.</p>
+
+            <p>Interstate highways are owned, built, and operated by the US states, with funding aid from the federal government. State highway departments work through the <b>American Association of State Highway and Transportation Officials (AASHTO)</b> to develop highway design standards and assign numbers to new Interstate highways.</p>
+            </div>
+          </li>
+          <li class="sidebar-dropdown">
+            <a href="#">
+              <i class="fa fa-list-ol"></i>
+              <span>Numbering System</span>
+            </a>
+            <div class="sidebar-submenu">
+              
+              <p><b>Primary Interstate routes</b> are designated by one- or two-digit numbers. Routes with numbers ending in 0 or 5 are intended to be <b>major arteries</b>, extending from coast to coast or border to border (though many do not).</p>
+              
+              <p>Geographically, Interstate highway route numbers <b>increase from southwest to northeast</b>, with the lowest numbers in the south and west of the country and the highest numbers in the north and east.</p>
+              
+              <p><b>Odd</b> route numbers are used for primary routes running generally north-south, while <b>even</b> route numbers are used for primary routes running generally east-west. </p>          
+              <p><b>Auxiliary Interstate routes</b> are designated by three-digit numbers, each comprising a parent primary route plus a prefix. Odd-numbered prefixes (e.g. I 540) are used for spur routes, which connect to the parent route at only one point. Even-numbered prefixes (e.g. I 495) are used for radial or bypass routes, which connect to a parent route more than once. Auxiliary route numbers are sometimes repeated in other states along the same parent route, though each state can have only one instance.</p>
+              
+              <p><b>Business routes</b>, which use a green version of a parent route’s route marker, commonly serve central business districts and may not comply with Interstate highway construction standards.</p>
+            </div>
+          </li>
+          <li class="sidebar-dropdown">
+            <a href="#">
+              <i class="fa fa-info"></i>
+              <span>Interstate Route Facts</span>
+            </a>
+            <div class="sidebar-submenu">
+              <p>Lowest numbered primary Interstate: <a href=# class="i2">I 2</a></p>
+              <p>Highest numbered primary Interstate: <a href=# class="i99">I 99</a></p>
+              <p>Lowest numbered auxiliary Interstates: <a href=# class="i105ca">I 105 (CA)</a> and <a href=# class="i105or">I 105 (OR)</a></p>
+              <p>Highest numbered auxiliary Interstate: <a href=# class="i990ny">I 990 (NY)</a></p>
+              <p>Longest Interstates: 1. <a href=# class="i90">I 90 (3,020.5 miles)</a>, 2. <a href=# class="i80">I 80 (2,899.5 miles)</a>, 3. <a href=# class="i40">I 40 (2,555.4 miles)</a>, 4. <a href=# class="i10">I 10 (2,460.3 miles)</a>, 5. <a href=# class="i70">I 70 (2,153.1 miles)</a></p>
+              <p>Shortest primary Interstates without planned extensions: 1. <a href=# class="i97">I 97 (17.6 miles)</a>, 2. <a href=# class="i2">I 2 (46.8 miles)</a>, 3. <a href=# class="i86w">I 86 (Western) (62.9 miles)</a>, 4. <a href=# class="i19">I 19 (63.6 miles)</a>, 5. <a href=# class="i66">I 66 (76.28 miles)</a></p>
+              <p>Primary Interstates that serve only one state: <a href=# class="i2">I 2</a>, <a href=# class="i4">I 4</a>, <a href=# class="i11">I 11</a>, <a href=# class="i12">I 12</a>, <a href=# class="i14">I 14</a>, <a href=# class="i16">I 16</a>, <a href=# class="i17">I 17</a>, <a href=# class="i19">I 19</a>, <a href=# class="i27">I 27</a>, <a href=# class="i37">I 37</a>, <a href=# class="i43">I 43</a>, <a href=# class="i45">I 45</a>, <a href=# class="i73">I 73</a>, <a href=# class="i86w">I 86 (Western)</a>, <a href=# class="i87n">I 87 (Northern)</a>, <a href=# class="i87s">I 87 (Southern)</a>, <a href=# class="i88w">I 88 (Western)</a>, <a href=# class="i88e">I 88 (Eastern)</a>, <a href=# class="i96">I 96</a>, <a href=# class="i97">I 97</a></p>
+              <p>Unsigned Interstates: <a href=# class="i305ca">I 305 (CA)</a>, <a href=# class="i910la">I 910 (LA)</a>, <a href=# class="i315mt">I 315 (MT)</a>, <a href=# class="i124tn">I 124 (TN)</a>, <a href=# class="i444ok">I 444 (OK)</a>, <a href=# class="i345tx">I 345 (TX)</a>, <a href=# class="i478ny">I 478 (NY)</a>, <a href=# class="i878ny">I 878 (NY)</a>, <a href=# class="i194nd">I 194 (ND)</a>, <a href=# class="i495me">I 495 (ME)</a>, <a href=# class="i595md">I 595 (MD)</a>, <a href=# class="i296mi">I 296 (MI)</a></p>
+              <p>Interstate numbers shared by two distinct routes, with no plans to connect: <a href=# class="i76w">I 76 (Western)</a> & <a href=# class="i76e">I 76 (Eastern)</a>, <a href=# class="i84w">I 84 (Western)</a> & <a href=# class="i84e">I 84 (Eastern)</a>, <a href=# class="i86w">I 86 (Western)</a> & <a href=# class="i86e">I 86 (Eastern)</a>, <a href=# class="i87n">I 87 (Northern)</a> & <a href=# class="i87s">I 87 (Southern)</a>, <a href=# class="i88w">I 88 (Western)</a> & <a href=# class="i88e">I 88 (Eastern)</a></p>
+              <p>States with the most Interstate mileage: 1. <a href=# class="texas">Texas (3,233.45 miles)</a>, 2. <a href=# class="california">California (2,455.74 miles)</a>, 3. <a href=# class="illinois">Illinois (2,169.53 miles)</a>, 4. <a href=# class="pennsylvania">Pennsylvania (1,759.34 miles)</a>, 5. <a href=# class="new-york">New York (1674.73 miles)</a></p>
+              <p>States with the most Interstate highways: 1. <a href=# class="new-york">New York (29 routes)</a>, 2. <a href=# class="california">California (25 routes)</a>, 3. <a href=# class="illinois">Illinois (23)</a>, 4. <a href=# class="pennsylvania">Pennsylvania (22)</a>, 5. <a href=# class="ohio">Ohio (21)</a></p>
+              <p>Interstates that travel through the most states: 1. <a href=# class="i95">I 95 (16 states)</a>, 2. <a href=# class="i90">I 90 (13 states)</a>, 3. <a href=# class="i80">I 80 (11 states)</a>, 4. <a href=# class="i70">I 70 (10 states)</a>, 5. <a href=# class="i10">I 10 (8 states)</a></p>
+              <p>Only four state capitals are not served by an Interstate: Juneau, AK; <a href=# class="dover">Dover, DE</a>; <a href=# class="jefferson-city">Jefferson City, MO</a>; <a href=# class="pierre">Pierre, SD</a></p>
+              <p>The only auxiliary Interstate without an existing parent Interstate: <a href=# class="i238ca">I 238 (CA)</a></p>
+              <p>The shortest auxiliary Interstates: 1. <a href=# class="i878ny">I 878 (NY) (unsigned) (0.7 mile)</a>, 2. <a href=# class="i315mt">I 315 (MT) (unsigned) (0.8 mile)</a>, 3. <a href=# class="i110tx">I 110 (TX) (0.9 mile)</a></p>
+              <p>The only interstates with three of the same digits: <a href=# class="i444ok">I 444 (OK) (unsigned)</a>, <a href=# class="i555ar">I 555 (AR)</a></p>
+              <p>Interstate loops that do not share any portion of their route with another Interstate: <a href=# class="i610tx">I 610 (TX)</a>, <a href=# class="i270oh">I 270 (OH)</a>, <a href=# class="i485nc">I 485 (NC)</a>, <a href=# class="i295fl">I 295 (FL)</a></p>
+              <p>The longest concurrency of three Interstates: <a href=# class="i39-i90-i94">I 39, I 90, and I 94</a> in Wisconsin (29 miles)</p>
+            </div>
+          </li>
+          <li class="header-menu">
+            <span>Filters</span>
+          </li>
+          <li class="sidebar-dropdown">
+            <a href="#">
+              <i class="fa fa-filter"></i>
+              <span>By Route Type</span>
+            </a>
+            <div class="sidebar-submenu">
+              <div id="filter-group-type" class="filter-group">
+                <div class="select-buttons">
+                  <button id='select-types'>Select All</button>
+                  <button id='deselect-types'>Deselect All</button>
+                </div>
+                <div class="column col1"></div>
+                <div class="column col2"></div>
+              </div>
+            </div>
+          </li>
+          <li class="sidebar-dropdown">
+            <a href="#">
+              <i class="fa fa-filter"></i>
+              <span>By Route Number</span>
+            </a>
+            <div class="sidebar-submenu">
+              <div id="filter-group-number" class="filter-group">
+                <div class="select-buttons">
+                  <button id='select-numbers'>Select All</button>
+                  <button id='deselect-numbers'>Deselect All</button>
+                </div>
+                <div class="filter-row row1"></div>
+                <div class="filter-row row2"></div>
+              </div>
+            </div>
+          </li>
+          <li class="header-menu">
+            <span>Color Key</span>
+          </li>
+          <table id="color-key">
+            <thead>
+              <tr>
+                <th class="header"></th>
+                <th class="major">Major Primary</th>
+                <th class="primary">Other Primary</th>
+                <th class="auxiliary">Auxiliary</th>
+                <th class="business hidden">Business</th>
+                <th class="future hidden">Future</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="00s">
+                <td class="header">00s</td>
+                <td class="major"></td>
+                <td class="primary"></td>
+                <td class="auxiliary"></td>
+                <td class="business hidden"></td>
+                <td class="future hidden"></td>
+              </tr>
+              <tr class="10s">
+                <td class="header">10s</td>
+                <td class="major"></td>
+                <td class="primary"></td>
+                <td class="auxiliary"></td>
+                <td class="business hidden"></td>
+                <td class="future hidden"></td>
+              </tr>
+              <tr class="20s">
+                <td class="header">20s</td>
+                <td class="major"></td>
+                <td class="primary"></td>
+                <td class="auxiliary"></td>
+                <td class="business hidden"></td>
+                <td class="future hidden"></td>
+              </tr>
+              <tr class="30s">
+                <td class="header">30s</td>
+                <td class="major"></td>
+                <td class="primary"></td>
+                <td class="auxiliary"></td>
+                <td class="business hidden"></td>
+                <td class="future hidden"></td>
+              </tr>
+              <tr class="40s">
+                <td class="header">40s</td>
+                <td class="major"></td>
+                <td class="primary"></td>
+                <td class="auxiliary"></td>
+                <td class="business hidden"></td>
+                <td class="future hidden"></td>
+              </tr>
+              <tr class="50s"r>
+                <td class="header">50s</td>
+                <td class="major"></td>
+                <td class="primary"></td>
+                <td class="auxiliary"></td>
+                <td class="business hidden"></td>
+                <td class="future hidden"></td>
+              </tr>
+              <tr class="60s">
+                <td class="header">60s</td>
+                <td class="major"></td>
+                <td class="primary"></td>
+                <td class="auxiliary"></td>
+                <td class="business hidden"></td>
+                <td class="future hidden"></td>
+              </tr>
+              <tr class="70s">
+                <td class="header">70s</td>
+                <td class="major"></td>
+                <td class="primary"></td>
+                <td class="auxiliary"></td>
+                <td class="business hidden"></td>
+                <td class="future hidden"></td>
+              </tr>
+              <tr class="80s">
+                <td class="header">80s</td>
+                <td class="major"></td>
+                <td class="primary"></td>
+                <td class="auxiliary"></td>
+                <td class="business hidden"></td>
+                <td class="future hidden"></td>
+              </tr>
+              <tr class="90s">
+                <td class="header">90s</td>
+                <td class="major"></td>
+                <td class="primary"></td>
+                <td class="auxiliary"></td>
+                <td class="business hidden"></td>
+                <td class="future hidden"></td>
+              </tr>
+            </tbody>
+          </table>
+        </ul>
+      </div>
+      <!-- sidebar-menu  -->
+    </div>
+    <!-- sidebar-content  -->
+  </nav>
+  <!-- sidebar-wrapper  -->
+  <main class="page-content" >
+    <div id='map' class="container-fluid"></div>
+    <!--<pre id="info"></pre>-->
+  </main>
+    <!-- page-content" -->
+</div>
+<!-- body -->
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
