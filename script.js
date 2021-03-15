@@ -1,7 +1,7 @@
 /////////////////////////PUBLIC MAPBOX TOKEN////////////////////////
 
 mapboxgl.accessToken =
-  "pk.eyJ1IjoiY2FybGVkZ2UiLCJhIjoiY2tsd2kxa245MmlwazJ1bHdhendncGYzNSJ9.ejONKNoTMvl1kNIdS9SRyQ";
+  "pk.eyJ1IjoiY2FybGVkZ2UiLCJhIjoiY2tsd2kwdzBiMTJxazJ3cDkyaHk2MWxvMSJ9.7FQ_pGvME092HWrPHiq_tQ";
 
 /////////////////////////GLOBAL VARIABLES////////////////////////
 
