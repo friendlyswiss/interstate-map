@@ -54,8 +54,8 @@ for (let i = 0; i < arrayLength; i++) {
 
                 if (ref.match(threeDigits)) {
               
-                  props.refLen = 3
-                  let refNum = ref.slice(2,5)
+                  let refNum = ref.slice(2)
+                  props.refLen = refNum.length
                   props.refNum = refNum
                   props.routeTensDigit = Number(refNum.charAt(1))
                   props.routeTier = "auxiliary"
@@ -72,8 +72,8 @@ for (let i = 0; i < arrayLength; i++) {
 
                 else if (ref.match(twoDigits)) {
                   
-                  props.refLen = 2
-                  let refNum = ref.slice(2,4)
+                  let refNum = ref.slice(2)
+                  props.refLen = refNum.length
                   props.refNum = refNum
                   props.routeTensDigit = Number(refNum.charAt(0))
                   let onesDigit = Number(refNum.charAt(1))
@@ -95,9 +95,10 @@ for (let i = 0; i < arrayLength; i++) {
                 }
 
                 else {
-                  props.refLen = 2
+                  let refNum = ref.slice(2)
+                  props.refLen = refNum.length
                   props.routeTensDigit = 0
-                  let refNum = ref.slice(2,3)
+
                   props.refNum = refNum
                   let onesDigit = Number(refNum.charAt(0))
                 
