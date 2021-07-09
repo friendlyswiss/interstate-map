@@ -1,7 +1,7 @@
 /////////////////////////PUBLIC MAPBOX TOKEN////////////////////////
 
 mapboxgl.accessToken =
-  "pk.eyJ1IjoiY2FybGVkZ2UiLCJhIjoiY2tsd2kwdzBiMTJxazJ3cDkyaHk2MWxvMSJ9.7FQ_pGvME092HWrPHiq_tQ";
+  "pk.eyJ1IjoiY2FybGVkZ2UiLCJhIjoiY2tsd2kxa245MmlwazJ1bHdhendncGYzNSJ9.ejONKNoTMvl1kNIdS9SRyQ";
 
 /////////////////////////GLOBAL VARIABLES////////////////////////
 
@@ -11,20 +11,15 @@ const layerList = ['triplex-interstates-0','triplex-interstates-1','triplex-inte
 
 ////////////////////////DEFINING COLOR PALETTE//////////////////////////
 
-const baseColor0 = tinycolor("rgb(255, 255, 255)")
-const baseColor1 = tinycolor("rgb(255, 33, 0)")
-const baseColor2 = tinycolor("rgb(255, 115, 0)")
-const baseColor3 = tinycolor("rgb(255, 245, 0)")
-const baseColor4 = tinycolor("rgb(99, 255, 0)")
-const baseColor5 = tinycolor("rgb(0, 255, 191)")
-const baseColor6 = tinycolor("rgb(0, 176, 255)")
-const baseColor7 = tinycolor("rgb(0, 38, 255)")
-const baseColor8 = tinycolor("rgb(218, 0, 255)")
-const baseColor9 = tinycolor("rgb(255, 0, 91)")
+//Base colors, slightly modified from perceptually uniform colors
+const rawBaseColors = [
+  "#FFFFFF","#F05E84","#D57B00","#BDAA00","#47D600","#00D688","#00B1BF","#009CF1","#AF73F8","#EB51CF"
+]
 
 const baseColors = []
 for (i = 0; i < 10; i++) {
-  baseColors.push(eval('baseColor' + i))
+ tinyColor = tinycolor(rawBaseColors[i]) 
+ baseColors.push(eval(tinyColor))
 }
 
 const majorColors = []
@@ -35,28 +30,54 @@ for (i = 0; i < 10; i++) {
 
 const primaryColors = []
 for (i = 0; i < 10; i++) {
-  const color = baseColors[i].clone().darken(20).toString()
+  const color = baseColors[i].clone().desaturate(40).toString()
   primaryColors.push(color)
 }
 
 const auxiliaryColors = []
 for (i = 0; i < 10; i++) {
-  const color = baseColors[i].clone().darken(32).toString()
+  const color = baseColors[i].clone().desaturate(60).lighten(5).toString()
   auxiliaryColors.push(color)
 }
 
 const businessColors = []
 for (i = 0; i < 10; i++) {
-  const color = baseColors[i].clone().desaturate(80).darken(10).toString()
+  const color = baseColors[i].clone().desaturate(70).lighten(5).toString()
   businessColors.push(color)
 }
 
 const futureColors = []
 for (i = 0; i < 10; i++) {
-  const color = baseColors[i].clone().desaturate(60).lighten(20).toString()
+  const color = baseColors[i].clone().desaturate(70).lighten(10).toString()
   futureColors.push(color)
 }
 
+////////////////////////MANUAL COLOR TWEAKS FOR CONTRAST////////////////////////////
+
+//Set shades of grey for 00s
+primaryColors[0] = "#cccccc"
+auxiliaryColors[0] = "#adadad"
+businessColors[0] = "#e6e6e6"
+
+//Nudge down saturation on teals
+let routesToDesaturate = [6]
+for (i = 0; i < routesToDesaturate.length; i++){
+  primaryColors[routesToDesaturate[i]] = baseColors[routesToDesaturate[i]].clone().desaturate(50).toString()
+  auxiliaryColors[routesToDesaturate[i]] = baseColors[routesToDesaturate[i]].clone().desaturate(70).lighten(10).toString()
+  businessColors[routesToDesaturate[i]] = baseColors[routesToDesaturate[i]].clone().desaturate(80).lighten(7).toString()
+  futureColors[routesToDesaturate[i]] = baseColors[routesToDesaturate[i]].clone().desaturate(80).lighten(12).toString()
+}
+
+//Nudge up saturation on reds, pinks, and purples
+let routesToSaturate = [1,8,9]
+for (i = 0; i < routesToSaturate.length; i++){
+  primaryColors[routesToSaturate[i]] = baseColors[routesToSaturate[i]].clone().desaturate(30).toString()
+  auxiliaryColors[routesToSaturate[i]] = baseColors[routesToSaturate[i]].clone().desaturate(40).lighten(5).toString()
+  businessColors[routesToSaturate[i]] = baseColors[routesToSaturate[i]].clone().desaturate(50).lighten(5).toString()
+  futureColors[routesToSaturate[i]] = baseColors[routesToSaturate[i]].clone().desaturate(50).lighten(10).toString()
+}
+
+//Dump all color values into a single object
 const colors = {
   'signed': {
     'major': {
@@ -1336,17 +1357,6 @@ const zoomAreas = [
 
 let targetClass
 
-// let filterList = [
-//   {'id': 'major-layers', 'name': "Major Primary Routes",'group': '#filter-group-type .col1', 'checked': true},
-//   {'id': 'primary-layers', 'name': "Other Primary Routes",'group': '#filter-group-type .col1', 'checked': true},
-//   {'id': 'auxiliary-layers', 'name': "Auxiliary Routes",'group': '#filter-group-type .col1', 'checked': true},
-//   {'id': 'business-layers', 'name': "Business Routes",'group': '#filter-group-type .col2', 'checked': false},
-//   {'id': 'unsigned-layers', 'name': "Unsigned Routes",'group': '#filter-group-type .col2', 'checked': false},
-//   {'id': 'future-layers', 'name': "Future Routes",'group': '#filter-group-type .col2', 'checked': false},
-//   {'id': 'even-routes', 'name': "Even Route Numbers",'group': '#filter-group-number .row1', 'checked': true},
-//   {'id': 'odd-routes', 'name': "Odd Route Numbers",'group': '#filter-group-number .row1', 'checked': true}
-// ]
-
 for (i = 0; i < zoomAreas.length; i++) {
   targetClass = document.getElementsByClassName(zoomAreas[i].target)  
   for (j = 0; j < targetClass.length; j++){
@@ -1445,7 +1455,7 @@ let navWidth
 
 // Set/update the viewportWidth value
 let setViewportWidth = function () {
-	let viewportWidth = window.innerWidth || document.documentElement.clientWidth
+  let viewportWidth = window.innerWidth || document.documentElement.clientWidth
   if (viewportWidth < 768) {
     navWidth = 460
   }
@@ -1459,7 +1469,7 @@ setViewportWidth();
 
 // On resize events, recalculate and log
 window.addEventListener('resize', function () {
-	setViewportWidth();
+  setViewportWidth();
 }, false);
 
 /////////////////////////////CLOSE SIDEBAR ON SWIPE///////////////////////////

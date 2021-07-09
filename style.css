@@ -482,48 +482,52 @@ button:active {
 /*---------------------Checkboxes as toggles---------------------*/
 
 [type="checkbox"] {
-	--checkbox-height: 1em;
-	--checkbox-width: 2em;
-	--checkbox-padding: 1px;
-	--checkbox-transition: .2s;
-	position: relative;
-	width: var(--checkbox-width);
-	height: var(--checkbox-height);
-	margin: 0;
-	border-width: 0; /* for iOS */
-	border-radius: var(--checkbox-height);
-	background-color: lightgray;
-	font-size: inherit;
-	cursor: pointer;
-	outline: none;
-	transition: background-color var(--checkbox-transition);
-	-moz-appearance: none;
-	-webkit-appearance: none;
+  --checkbox-height: 1em;
+  --checkbox-width: 2em;
+  --checkbox-padding: 1px;
+  --checkbox-transition: .2s;
+  position: relative;
+  width: var(--checkbox-width);
+  height: var(--checkbox-height);
+  margin: 0;
+  border-width: 0; /* for iOS */
+  border-radius: var(--checkbox-height);
+  background-color: lightgray;
+  font-size: inherit;
+  cursor: pointer;
+  outline: none;
+  transition: background-color var(--checkbox-transition);
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
 
 [type="checkbox"]:checked {
-	background-color: #16c7ff;
+  background-color: #16c7ff;
 }
 
 [type="checkbox"]::before {
-	content: "";
-	display: inline-block;
-	position: absolute;
-	top: var(--checkbox-padding);
-	left: var(--checkbox-padding);
-	width: calc(var(--checkbox-height) - var(--checkbox-padding) * 2);
-	height: calc(var(--checkbox-height) - var(--checkbox-padding) * 2);
-	background-color: white;
-	border-radius: 100%;
-	transition: transform var(--checkbox-transition), box-shadow var(--checkbox-transition);
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: var(--checkbox-padding);
+  left: var(--checkbox-padding);
+  width: calc(var(--checkbox-height) - var(--checkbox-padding) * 2);
+  height: calc(var(--checkbox-height) - var(--checkbox-padding) * 2);
+  background-color: white;
+  border-radius: 100%;
+  transition: transform var(--checkbox-transition), box-shadow var(--checkbox-transition);
 }
 
+// [type="checkbox"]:focus {
+//  outline: 3px solid orange;
+// }
+
 [type="checkbox"]:checked::before {
-	transform: translateX(calc(var(--checkbox-width) - 100% - var(--checkbox-padding) * 2));
+  transform: translateX(calc(var(--checkbox-width) - 100% - var(--checkbox-padding) * 2));
 }
 
 [type="checkbox"]:focus::before {
-	box-shadow: 0 0 .063em .125em #16c7ff;
+  box-shadow: 0 0 .063em .125em #16c7ff;
 }
 
 /*-------------------------Color Key-----------------------*/
@@ -540,7 +544,7 @@ button:active {
 }
 
 #color-key .header {
-  width: 10%;
+  width: 12%;
 }
 
 #color-key tbody tr td.major,
